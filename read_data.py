@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt 
 Time = []
 Data = []
 dataframe = pd.read_excel (r'Data.xlsx')
@@ -8,5 +9,11 @@ while i < 16384:
     Data.append(dataframe['g'][i])
     i += 1
     
-print(Time)
-print(Data)
+x = Time 
+y = Data 
+plt.plot(x, y)   
+plt.xlabel('TIME') 
+plt.ylabel('G') 
+plt.title('Time domain') 
+plt.show() 
+
