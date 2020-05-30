@@ -10,7 +10,8 @@ while i < 16384:
     i += 1
     
 x = Time 
-y = Data 
+y = Data
+print(len(y))
 plt.plot(x, y)   
 plt.xlabel('TIME') 
 plt.ylabel('G') 
