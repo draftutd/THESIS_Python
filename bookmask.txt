@@ -3,3 +3,4 @@ https://www.geeksforgeeks.org/graph-plotting-in-python-set-1/
 https://pythontic.com/visualization/signals/fouriertransform_fft
 https://www.geeksforgeeks.org/python-fast-fourier-transformation/
 https://stackoverflow.com/questions/22566692/python-how-to-plot-graph-sine-wave/34442729
+https://www.mkdynamics.net/current_projects/2sine_wv_XHz.html
