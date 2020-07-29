@@ -1,12 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
-fs = 1000 # sample rate 
-f = 500 # the frequency of the signal
+fs = 50 # sample rate 
+f = 5 # the frequency of the signal
 
 x = np.arange(fs) # the points on the x axis for plotting
 # compute the value (amplitude) of the sin wave at the for each sample
 y = np.sin(2*np.pi*f * (x/fs)) 
 
+print(x)
+print(y)
 
 
 plt.plot(x, y)
