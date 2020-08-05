@@ -28,7 +28,6 @@ tpCount     = len(y)
 values      = np.arange(int(tpCount/2))
 timePeriod  = tpCount/samplingFrequency
 frequencies = values/timePeriod
-
 # Frequency domain representation
 axis[1].set_title('Fourier transform depicting the frequency components')
 axis[1].plot(frequencies, abs(fourierTransform))

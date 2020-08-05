@@ -32,9 +32,23 @@ values      = np.arange(int(tpCount/2))
 timePeriod  = tpCount/samplingFrequency
 frequencies = values/timePeriod
 
+# Frequency Error
+test = abs(fourierTransform)*2
+print("Freq1 = ",freq1)
+print("Amplitude1 = ",amplitude1)
+print("Amplitude1FFT = ",test[150])
+Freq1Error = ((amplitude1-test[150])/amplitude1)*100
+print("Amplitude1Error %.2f %%"%(Freq1Error))
+print()
+print("Freq2 = ",freq2)
+print("Amplitude2 = ",amplitude2)
+print("Amplitude2FFT = ",test[160])
+Freq2Error = ((amplitude2-test[160])/amplitude2)*100
+print("Amplitude2Error %.2f %%"%(Freq2Error))
+
 # Frequency domain representation
 axis[1].set_title('Fourier transform depicting the frequency components')
-axis[1].plot(frequencies, abs(fourierTransform))
+axis[1].plot(frequencies, abs(fourierTransform)*2)
 axis[1].set_xlabel('Frequency')
 axis[1].set_ylabel('Amplitude')
 plt.show() 
