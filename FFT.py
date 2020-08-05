@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 Time,Data = read_data.read_data()
 
-samplingFrequency   = 1000;
+samplingFrequency   = 6400;
 figure, axis = plt.subplots(2, 1)
 plt.subplots_adjust(hspace=1)
 
