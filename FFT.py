@@ -23,7 +23,7 @@ fourierTransform = fourierTransform[range(int(len(Data)/2))] # Exclude sampling 
 tpCount     = len(Data)
 values      = np.arange(int(tpCount/2))
 timePeriod  = tpCount/samplingFrequency
-frequencies = values/timePeriod
+frequencies = (values/timePeriod)
 
 # Frequency domain representation
 axis[1].set_title('Fourier transform depicting the frequency components')
