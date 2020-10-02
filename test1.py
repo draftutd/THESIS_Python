@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt 
 
-fs = 300 # sample rate 
-f = 100 # the frequency of the signal
+fs = 1000 # sample rate 
+f = 10 # the frequency of the signal
 
 samplingFrequency   = fs;
 figure, axis = plt.subplots(2, 1)
