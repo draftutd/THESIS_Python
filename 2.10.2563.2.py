@@ -7,7 +7,7 @@ plt.subplots_adjust(hspace=1)
 Time = []
 Data = []
 velocity = []
-dataframe = pd.read_excel (r'Data.xlsx')
+dataframe = pd.read_excel (r'Data2.xlsx')
 i =0 
 while i < 16384:
     Time.append(dataframe['Time '][i])
