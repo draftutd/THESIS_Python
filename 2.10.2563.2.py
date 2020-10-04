@@ -42,7 +42,7 @@ for x, y in zip(frequencies, abs(fourierTransform)):
             else:
                         velocity1=0
             velocity.append(velocity1)
-            export(x,y)
+            #export(x,y)
 
     
 # Frequency domain representation
