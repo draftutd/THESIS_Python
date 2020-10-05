@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-sRate = 100 # sample rate in Hertz
+sRate = 8192 # sample rate in Hertz
 amplitude1 = 10 # amplitude of first wave
-freq1 = 20.0 # frequency of first sine wave
-numPeriods = 1 # number of periods of the sine waves
+freq1 = 200.0 # frequency of first sine wave
+numPeriods = 2 # number of periods of the sine waves
 numSamples = sRate * numPeriods # total number of samples
 
 samplingFrequency   = sRate;
