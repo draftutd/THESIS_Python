@@ -51,5 +51,6 @@ axis[2].set_xlabel('Frequency')
 axis[2].set_ylabel('Amplitude')
 
 for x, y in zip(frequencies, abs(fourierTransform)*2.2477):
-    export(x,y)
+    f=0
+    #export(x,y)
 plt.show()

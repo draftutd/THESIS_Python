@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 from numpy.fft import fft, fftshift
 import numpy as np
 
-window = np.hanning(51)
+window = np.hanning(3200)
 print(len(window))
 print(window)
-#plt.plot(window)
-#plt.title("Hann window")
-#plt.ylabel("Amplitude")
-#plt.xlabel("Sample")
+plt.plot(window)
+plt.title("Hann window")
+plt.ylabel("Amplitude")
+plt.xlabel("Sample")
 plt.figure()
 
 A = fft(window, 2048) / 25.5
@@ -22,10 +22,10 @@ print(len(freq))
 print(freq)
 print(len(response))
 print(response)
-plt.plot(freq, response)
-plt.title("Frequency response of the Hann window")
-plt.ylabel("Magnitude [dB]")
-plt.xlabel("Normalized frequency [cycles per sample]")
-plt.axis('tight')
+#plt.plot(freq, response)
+#plt.title("Frequency response of the Hann window")
+#plt.ylabel("Magnitude [dB]")
+#plt.xlabel("Normalized frequency [cycles per sample]")
+#plt.axis('tight')
 
 plt.show()
